@@ -1,0 +1,22 @@
+ALGORITHM Distinct_elements
+VAR
+    set1:ARRAY_OF INTEGER[i];
+    set2:ARRAY_OF INTEGER[j];
+    sum:INTEGER:=0;
+    value:BOOLEAN;
+BEGIN
+  write(tab_set1[i]);
+   read(tab_set1[i]);
+  write(tab_set2[j]);
+    read(tab_set2[j]);
+    FOR i FROM 0 TO i<set1.length STEP 1 DO
+    j=0; 
+      WHILE (j=<set2.length-1 and set1[i]<>set2[j]) DO
+         j++;
+    END WHILE
+        IF (j=set2.length) THEN
+          sum=sum+set1[i]
+        END_IF
+      END FOR
+ Write (sum); 
+END
